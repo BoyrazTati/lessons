@@ -1,0 +1,47 @@
+.ground{
+    height: 500px;
+    border-bottom: 5px solid #333;
+    text-align: center;
+}
+.ground img{
+    transform: translateY(404px);
+    animation: bounce 1s 5;
+}
+@keyframes bounce{
+    from{
+        transform: translateY(404px) rotate(0deg);
+
+    }
+    50%{
+        transform: translateY(200px) rotate(720deg);
+
+    }
+    to{
+        transform: translateY(404px) rotate(1440deg);
+
+    }
+}
+.shadow{
+    width: 100px;
+    height: 50px;
+    background-color: #999;
+    margin: auto;
+    border-radius: 100%;
+    animation: shad 1s 5;
+}
+@keyframes shad{
+    from{
+        background-color: #999;
+        transform: scale(1.0)       
+    }
+    50%{
+        background-color: #fff;
+        transform: scale(0.2)
+    }
+    to{
+        background-color: #999;
+        transform: scale(1.0)
+    }
+
+
+}
