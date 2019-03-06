@@ -1,0 +1,48 @@
+body{
+    background-color: #222;
+    color: white;
+    font-family: Arial;
+}
+#preloader{
+    font-size: 100px;
+    width: 400px;
+    height: 100px;
+    border-bottom: 10px solid #330000; 
+    
+}
+#preloader div{
+    font-family: 'Times New Roman';
+}
+#preloader :first-child{
+    color: red;
+    transform: translateY(-190px);
+    animation: pulse 3s infinite;
+}
+#preloader :nth-child(2){
+    color: #990000;
+    transform: translateY(-330px);
+    animation: pulse 3s infinite;
+    animation-delay: 1s;
+}
+#preloader :last-child{
+    color: #330000;
+    transform: translateY(-470px);
+    animation: pulse 3s infinite;
+    animation-delay: 2s;
+}
+h1{
+    margin-top: 200px;
+    margin-left: 50px;
+}
+@keyframes pulse{
+    from{
+        opacity: 0.0;
+    }
+    33%{
+        opacity: 1.0;
+    }
+    33.1%{ opacity: 0.0;}
+    to{
+        opacity: 0.0;
+    }
+}
