@@ -1,0 +1,26 @@
+body{
+    background-color: #333;
+}
+#preloader{
+    padding: 200px;
+}
+#preloader .square{
+    width:200px;
+    height:200px;
+    background-color: #444;
+    transform: rotate(45deg);
+    animation: rot 1s 5;
+}
+@keyframes rot{
+    from{ 
+        background-color: #444;  
+        transform: rotate(45deg);
+        border-radius: 100px;
+    }
+    to{
+        background-color: #111;
+        transform: rotate(405deg);
+        border-radius:0;
+    }
+
+}
